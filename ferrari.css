@@ -1,3 +1,21 @@
+::backdrop {
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-hard: 6px 6px 0 #111111; /* bayangan padat, bukan blur */
+  --dot: rgba(17, 17, 17, 0.07); /* titik-titik kertas di background */
+  --nav-bg: rgba(243, 239, 230, 0.94); /* background navbar saat di-scroll */
+  --footer-bg: #111111; /* footer selalu gelap */
+  --footer-text: #f3efe6;
+  --cream: #f3efe6;
+  --chalk: #f3efe6;
+  --chalk-dim: #a89a9a;
+  --paper: #1b1b1b;
+  --ink: #f2eeee;
+  --mint: #00ffcc;
+  --red: #dc0000;
+  --red-dim: #8a0000;
+  --blue: #00aaff;
+  --blue-dim: #005577;
+}
 body {
   margin: 0;
   font-family: "Inter", sans-serif;

@@ -1,6 +1,8 @@
-    <?php
-// POST: menyimpan pesanan. Total dihitung di SERVER, tidak percaya angka dari browser.
-require __DIR__ . '/../config.php';
+<?php
+header('Content-Type: application/json; charset=utf-8');
+
+// Sesuaikan path ini: gunakan '/config.php' jika sejajar, atau '/../config.php' jika di folder luar
+require __DIR__ . '/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     kirim_json(['error' => 'Gunakan metode POST'], 405);
@@ -28,7 +30,7 @@ if (!$mobilId || !$warnaId || !$velgId) {
 try {
     $pdo = db();
 
-    // Ambil harga asli dari database (prepared statement mencegah SQL injection)
+    // Ambil harga asli dari database
     $q = $pdo->prepare('SELECT harga FROM mobil WHERE id = ?');
     $q->execute([$mobilId]);
     $harga = $q->fetchColumn();
@@ -56,4 +58,3 @@ try {
 } catch (PDOException $e) {
     kirim_json(['error' => 'Gagal menyimpan pesanan'], 500);
 }
-header('Content-Type: application/json; charset=utf-8');

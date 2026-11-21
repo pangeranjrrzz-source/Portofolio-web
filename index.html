@@ -19,23 +19,23 @@
     >
       
       :root {
-        --bg: #f3efe6; /* kertas */
-        --bg-soft: #eae4d6; /* kertas lebih tua */
-        --surface: #fbf9f3; /* kartu */
-        --line: rgba(17, 17, 17, 0.18);
-        --line-strong: #111111; /* border tebal ala zine */
-        --text: #111111; /* tinta */
-        --muted: #5c574e;
-        --accent: #ff2d00; /* merah marker */
-        --accent-soft: rgba(255, 45, 0, 0.12);
+        --bg: #e0c37e; /* kertas */
+        --bg-soft: #1f1e1b; /* kertas lebih tua */
+        --surface: #ffffff; /* kartu */
+        --line: rgba(29, 21, 21, 0.18);
+        --line-strong: #1a1818; /* border tebal ala zine */
+        --text: #92924d; /* tinta */
+        --muted: #181714;
+        --accent: #7e6a3e; /* merah marker */
+        --accent-soft: rgba(123, 221, 98, 0.12);
         --font-display: "Anton", "Arial Black", Impact, sans-serif;
         --font: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
         --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
         --max: 1200px;
         --pad: clamp(20px, 5vw, 48px);
-        --radius: 0; /* brutalist: sudut tajam */
+        --radius: 5; /* brutalist: sudut tajam */
         --ease: cubic-bezier(0.22, 1, 0.36, 1);
-        --shadow-hard: 6px 6px 0 #111111; /* bayangan padat, bukan blur */
+        --shadow-hard: 6px 6px 0 #ecb9b9; /* bayangan padat, bukan blur */
       }
 
       *,
@@ -82,7 +82,7 @@
 
       ::selection {
         background: var(--accent);
-        color: #fff;
+        color: #1b1919;
       }
 
       /* fokus keyboard yang jelas */
@@ -183,7 +183,7 @@
       }
 
       .btn--solid:hover {
-        background: #ff4719;
+        background: #131212;
       }
 
       .btn--ghost:hover {
@@ -245,7 +245,7 @@
       }
 
       .nav--scrolled {
-        background: rgba(243, 239, 230, 0.94);
+        background: rgba(136, 131, 89, 0.94);
       }
 
       .nav__inner {
@@ -348,7 +348,7 @@
       .nav__backdrop {
         position: fixed;
         inset: 0;
-        background: rgba(17, 17, 17, 0.45);
+        background: rgba(104, 82, 82, 0.45);
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s;
@@ -990,7 +990,7 @@
         position: fixed;
         inset: 0;
         z-index: 120;
-        background: rgba(17, 17, 17, 0.7);
+        background: rgba(189, 166, 166, 0.7);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1090,7 +1090,7 @@
 
       .modal__close:hover {
         background: var(--accent);
-        color: #fff;
+        color: #4b2e2e;
         transform: translate(-2px, -2px);
         box-shadow: 6px 6px 0 var(--line-strong);
       }
@@ -1406,7 +1406,7 @@
 
       .footer__role {
         margin: 2px 0 0;
-        color: #a8a29a;
+        color: #070606;
         font-size: 0.85rem;
       }
 
@@ -1464,7 +1464,7 @@
       .footer__bottom p {
         margin: 0;
         font-size: 0.82rem;
-        color: #a8a29a;
+        color: #756c5e;
       }
 
       .footer__made {
@@ -1538,7 +1538,7 @@
           >
             <div class="hero__type">
               <span class="hero__line hero__line--1"
-                >Putra Aditya Prasetiyo Wijaya</span
+                >WELCOME IN MY PORTO</span
               >
               <div class="hero__photo">
                 <img
@@ -1566,23 +1566,22 @@
           </div>
           <div class="hero__marquee" aria-hidden="true">
             <div class="hero__marquee-track">
-              <span>Web Developer ///</span><span>Siswa SKARIGA ///</span
-              ><span>HTML ///</span><span>CSS ///</span
-              ><span>JavaScript ///</span><span>React JS ///</span
-              ><span>VS Code ///</span><span>Git ///</span
-              ><span>Portofolio 2026 ///</span><span>Web Developer ///</span
-              ><span>Siswa SKARIGA ///</span><span>HTML ///</span
-              ><span>CSS ///</span><span>JavaScript ///</span
-              ><span>React JS ///</span><span>VS Code ///</span
-              ><span>Git ///</span><span>Portofolio 2026 ///</span>
+              <span>Skill Web Developer / </span><span>Siswa SKARIGA /</span
+              ><span>HTML /</span><span>CSS /</span
+              ><span>JavaScript /</span><span>React JS /</span
+              ><span>VS Code /</span><span>Git /</span
+              ><span>Portofolio 2026 /</span><span>Web Developer /</span
+              ><span>Siswa SKARIGA /</span><span>HTML /</span
+              ><span>CSS /</span><span>JavaScript /</span
+              ><span>React JS /</span><span>VS Code /</span
+              ><span>Git /</span><span>Portofolio 2026 /</span>
             </div>
           </div>
         </section>
         <section class="section about" id="about">
           <div class="section__head">
-            <span class="section__index">01</span>
-            <h2 class="section__title">About Me</h2>
-            <span class="section__rule">//////</span>
+            <h2 class="section__title"> 01. About Me </h2>
+            <span class="section__rule">?////?</span>
           </div>
           <div class="about__grid reveal is-visible">
             <div class="about__text">
@@ -1681,8 +1680,7 @@
         </section>
         <section class="section skills" id="skills">
           <div class="section__head">
-            <span class="section__index">02</span>
-            <h2 class="section__title">Skills &amp; Technology</h2>
+            <h2 class="section__title">02. Skills &amp; Technology</h2>
             <span class="section__rule" aria-hidden="true"></span>
           </div>
           <div class="skills__groups reveal is-visible">
@@ -1777,8 +1775,7 @@
         </section>
         <section class="section projects" id="projects">
           <div class="section__head">
-            <span class="section__index">03</span>
-            <h2 class="section__title">Projects</h2>
+            <h2 class="section__title">03. Projects</h2>
             <span class="section__rule">//////</span>
           </div>
           <div
@@ -1796,7 +1793,7 @@
                 <img
                   alt="Preview Ferrari Website"
                   loading="lazy"
-                  src="aset/ferrari.svg"
+                  src="img/Latar UI Fantasi Kerajaan Berkilau.png"
                 /><span class="pcard__status pcard__status--selesai"
                   >Selesai</span
                 >
@@ -1906,7 +1903,7 @@
                 <img
                   alt="Preview StudyKit"
                   loading="lazy"
-                  src="aset/placeholder.svg"
+                  src="img/studykit-icon.png"
                 /><span class="pcard__status pcard__status--rencana"
                   >Rencana</span
                 >
@@ -1978,8 +1975,7 @@
         </section>
         <section class="section journey" id="journey">
           <div class="section__head">
-            <span class="section__index">04</span>
-            <h2 class="section__title">Learning Journey</h2>
+            <h2 class="section__title">04. Learning Journey</h2>
             <span class="section__rule">//////</span>
           </div>
           <p class="journey__intro">
@@ -2046,9 +2042,8 @@
         </section>
         <section class="section contact" id="contact">
           <div class="section__head">
-            <span class="section__index">05</span>
             <h2 class="section__title contact__title">
-              Let's build<br /><em>something.</em>
+              05. Let's build<br /><em>something.</em>
             </h2>
             <span class="section__rule">//////</span>
           </div>
